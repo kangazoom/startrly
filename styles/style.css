@@ -9,11 +9,11 @@ body {
 .menu {
   display: grid;
   grid-template-columns: 3fr 1fr 1fr;
-  list-style-type: none;
   font-size: 0.75em;
   font-family: Arial, bolder, sans-serif;
   margin: auto;
   padding: 10px 10px 10px 10px;
+  list-style-type: none;
 }
 
 h1 {
@@ -22,23 +22,22 @@ h1 {
 }
 
 .welcome {
-  text-align: center;
-  font-family: Arial, bold, sans-serif;
   display: flex;
   flex-flow: column wrap;
   align-content: space-between;
+  text-align: center;
+  font-family: Arial, bold, sans-serif;
   margin: 180px 0px 100px 0px;
   padding: 5px 0px 15em 0px;
-  border-bottom: darkgray 0.5px solid;
 }
 
 .welcome sub {
   font-size: 1.2em;
+  font-family: 'Noto Serif JP', sans-serif;
   font-weight: bold;
   text-transform: capitalize;
   font-stretch: ultra-expanded;
   margin-bottom: 2em;
-  font-family: 'Noto Serif JP', sans-serif;
 }
 
 .welcome a[href] {
@@ -53,18 +52,17 @@ h1 {
 }
 
 .quote {
-  font-style: italic;
-  font-size: 20px;
-  font-family: 'Times New Roman', cursive;
-  margin: 80px 0px 100px 0px;
-  line-height: 2em;
   display: flex;
   flex-flow: column wrap;
   align-items: center;
   align-content: space-evenly;
   justify-content: center;
+  font-style: italic;
+  font-size: 20px;
+  font-family: 'Times New Roman', cursive;
+  margin: 80px 0px 100px 0px;
+  line-height: 2em;
   padding: 4em 5px 5em 5px;
-  border-bottom: darkgray 0.5px solid;
 }
 
 .quote blockquote::before, blockquote::after {
@@ -88,7 +86,6 @@ h1 {
   display: grid;
   grid-template-rows: 1fr 3fr;
   margin-top: -1em;
-  border-bottom: darkgray 0.5px solid;
 }
 
 h2 {
@@ -98,13 +95,10 @@ h2 {
 
 .answers {
   display: grid;
-  list-style-type: none;
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 20px;
   margin-left: 5%;
   margin-right: 5%;
-
-
 }
 
 .answerbox img {
@@ -121,9 +115,6 @@ h2 {
 .team {
   display: grid;
   grid-template: repeat(2, 1fr) / repeat(5, minmax(10px, 1fr));
-  list-style-type: none;
-  padding: 0;
-  object-fit: cover;
   padding: 0em 2em 0em 2em;
   margin-left: 10%;
   margin-right: 10%;
@@ -168,7 +159,6 @@ h2 {
 .sponsorlist {
   display: grid;
   grid-rows: 1fr 5fr;
-  border-bottom: darkgray 0.5px solid;
   padding: 5% 0em 10% 0em;
   margin: 2em 0em 3em 0em;
 }
@@ -179,8 +169,6 @@ h2 {
   justify-content: space-evenly;
   align-content: space-evenly;
   align-items: center;
-  list-style-type: none;
-  padding: 0;
 }
 
 #footer {
@@ -191,7 +179,11 @@ h2 {
   font-family: Arial, bolder, sans-serif;
 }
 
-#footer ul {
+#footer ul, .sponsors, .team, .answers {
   list-style-type: none;
   padding: 0;
+}
+
+.welcome, .why, .quote, .sponsorlist {
+  border-bottom: darkgray 0.5px solid;
 }
