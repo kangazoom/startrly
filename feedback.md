@@ -4,16 +4,16 @@
 Feature | Feedback
 --- | ---
 **General** |
-Small commits with meaningful commit messages |
-Answered comprehension questions |
+Small commits with meaningful commit messages | x (mostly!)
+Answered comprehension questions | x
 **Code Requirements** |
-Only limited changes to the HTML (classes added for selection) |
-Page normalized |
-CSS grid used for layout |
-Flexbox used for layout |
-Google font used |
+Only limited changes to the HTML (classes added for selection) | x
+Page normalized | x
+CSS grid used for layout | x
+Flexbox used for layout | x
+Google font used | x
 CSS pseudo selector used |
-Background color |
-DRY CSS code |
-Appearance matches the image |
+Background color | x
+DRY CSS code | x
+Appearance matches the image | x
 **Overall** |
