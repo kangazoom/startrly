@@ -4,16 +4,19 @@
 
 body {
   font-family: 'Roboto', sans-serif;
+  background-color: seashell;
 }
 
 .menu {
   display: grid;
   grid-template-columns: 3fr 1fr 1fr;
-  font-size: 0.75em;
-  font-family: Arial, bolder, sans-serif;
   margin: auto;
   padding: 10px 10px 10px 10px;
   list-style-type: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+
 }
 
 h1 {
@@ -27,7 +30,7 @@ h1 {
   align-content: space-between;
   text-align: center;
   font-family: Arial, bold, sans-serif;
-  margin: 180px 0px 100px 0px;
+  margin: 180px 0px 0px 0px;
   padding: 5px 0px 15em 0px;
 }
 
@@ -49,6 +52,7 @@ h1 {
   padding: 5px;
   text-decoration: none;
   max-width: 10em;
+  background-color: white;
 }
 
 .quote {
@@ -60,9 +64,9 @@ h1 {
   font-style: italic;
   font-size: 20px;
   font-family: 'Times New Roman', cursive;
-  margin: 80px 0px 100px 0px;
+  margin: 0px 0px 100px 0px;
   line-height: 2em;
-  padding: 4em 5px 5em 5px;
+  padding: 6em 5px 5em 5px;
 }
 
 .quote blockquote::before, blockquote::after {
@@ -160,7 +164,7 @@ h2 {
   display: grid;
   grid-rows: 1fr 5fr;
   padding: 5% 0em 10% 0em;
-  margin: 2em 0em 3em 0em;
+  margin: 2em 0em 0em 0em;
 }
 
 .sponsors {
@@ -174,9 +178,12 @@ h2 {
 #footer {
   display: grid;
   grid-template-columns: 1.5fr 3.5fr;
-  padding: 0% 10% 10% 10%;
-  font-size: 0.75em;
-  font-family: Arial, bolder, sans-serif;
+  padding: 2% 10% 10% 10%;
+  background-image: url('../art/cute-turtle-animated-gif-2.gif');
+  background-repeat: no-repeat;
+  background-position: 80% 0%;
+  background-size: contain;
+  background-color: white;
 }
 
 #footer ul, .sponsors, .team, .answers {
@@ -184,6 +191,20 @@ h2 {
   padding: 0;
 }
 
-.welcome, .why, .quote, .sponsorlist {
+.welcome, .why, .quote, .sponsorlist, .menu {
   border-bottom: darkgray 0.5px solid;
+}
+
+.menu li:hover, #footer li:hover {
+  color: darkgoldenrod;
+  font-weight: bolder;
+}
+
+.menu, .quote {
+  background-color: floralwhite;
+}
+
+.menu, #footer {
+  font-size: 0.9em;
+  font-family: Arial, bolder, sans-serif;
 }
